@@ -8,6 +8,36 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!--<TextBlock Height="300" Width="300" TextWrapping="Wrap" FontSize="50" Text="Hello, Layout! TextWrapping text" FlowDirection="RightToLeft" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Rectangle MaxWidth="600" Fill="Green" Stroke="Black" StrokeThickness="10"/>
+        <Border Margin="20" BorderBrush="Aquamarine" BorderThickness="10" CornerRadius="20">
+            <Rectangle Height="300" Fill="Aqua" Margin="20"/>
+        </Border>
+        <StackPanel Orientation="Horizontal">
+            <Rectangle Fill="Red" Height="50" Width="150"/>
+            <Ellipse Fill="AntiqueWhite" Height="50" Width="150"/>
+        </StackPanel>-->
+        
+        <!-- *** Grid ***
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="0,0" FontSize="50"/>
+        <Rectangle Fill="Red" Grid.Row="0" Grid.Column="1"/>
+        <Rectangle Fill="Green" Grid.Row="1" Grid.Column="1"/>
+        <Rectangle Fill="Yellow" Grid.Row="1"/>
+        <Rectangle Fill="Azure" Grid.Row ="2" Grid.ColumnSpan="2"/> -->
 
-    </Grid>
+        <Canvas>
+            <Rectangle Canvas.ZIndex="1" Fill="Orange" Width="100" Height="100"/>
+            <Rectangle Fill="Yellow" Width="100" Height="100"/>
+            <Rectangle Fill="Green" Canvas.Left="100" Width="100" Height="100"/>
+        </Canvas>
+    </Grid> 
 </Page>
